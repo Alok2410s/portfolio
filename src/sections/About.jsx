@@ -1,10 +1,11 @@
 import Card from "../components/Card";
 import { useRef } from "react";
-import { Globe } from "../components/globe";
+import Globe from "../components/globe";
+
 const About = () => {
     const grid2Container = useRef();
     return (
-        <section className="c-space section-spacing">
+        <section className="c-space section-spacing" id="about">
             <h2 className="text-heading">About</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
                 {/*Grid 1*/}
@@ -68,21 +69,41 @@ const About = () => {
                     </div>
                 </div>
                 {/*Grid 3*/}
-                <div className="flex items-end grid-default-color grid-3">
-                    <div className="z-10 w-[50%]">
+                <div className="flex items-end grid-default-color grid-3 relative overflow-hidden">
+                    <div className="z-10 w-[50%] mb-5 ml-5">
                         <p className="headtext">Time Zone</p>
                         <p className="subtext">
                             I am based in Mars, and open to work in any time zone.
                             </p>
                     </div>
-                    <figure className="absolute left-[30%] top-[10%]">
-                        <Globe />
-                    </figure>
+                    <div className="absolute right-[-10%] top-[-20%] w-[120%] h-[120%] md:w-[150%] md:h-[150%] md:-right-[20%] z-0 pointer-events-auto">
+                       <Globe />
+                    </div>
                 </div>
                 {/*Grid 4*/}
-                <div className="flex items-end grid-default-color grid-4"></div>
+                <div className="grid-default-color grid-4 relative flex flex-col items-center justify-center group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-royal/30 to-black/50 z-0 pointer-events-none" />
+                    <div className="z-10 flex flex-col items-center">
+                        <p className="headtext text-center text-xl mb-4">Ready to start?</p>
+                        <a href="#contact" className="btn relative bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-8 py-3 rounded-full transition-all flex items-center gap-2 !w-auto">
+                            Get in touch 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
                 {/*Grid 5*/}
-                <div className="flex items-end grid-default-color grid-5"></div>
+                <div className="grid-default-color grid-5 relative flex flex-col justify-end overflow-hidden group">
+                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-fuchsia/20 via-transparent to-transparent opacity-60 pointer-events-none" />
+                    <div className="z-10 relative md:max-w-[70%]">
+                        <p className="headtext mb-2">My vision</p>
+                        <p className="subtext">
+                            I am dedicated to crafting intuitive, scalable, and beautifully designed digital experiences. 
+                            My approach combines solid software engineering with modern web aesthetics to bridge the gap between imagination and reality.
+                        </p>
+                    </div>
+                </div>
 
              </div>
         </section>

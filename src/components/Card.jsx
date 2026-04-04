@@ -13,7 +13,7 @@ const Card =({style, text, image, containerRef}) => {
 
         <motion.div
         className="absolute px-1 py-4 text-center rounded-full
-         ring-gray-700 front-extralight bg-storm w-[\12rem] cursor-grab "
+         ring-gray-700 font-extralight bg-storm w-48 cursor-grab"
             style={style}
             whileHover={{scale: 1.05}} 
             drag 

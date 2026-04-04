@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
 import { useEffect, useRef } from "react";
-import createGlobe from "cobe";
+import Globe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 
 import { twMerge } from "tailwind-merge";
@@ -39,10 +39,8 @@ const GLOBE_CONFIG = {
 export function Globe({
   className,
   config = GLOBE_CONFIG,
-})
-
-{
-  const canvasRef = useRef(null)
+}) {
+  const canvasRef = useRe(null)
   const phiRef = useRef(0)
   const widthRef = useRef(0)
   const pointerInteracting = useRef(null)
@@ -102,16 +100,17 @@ export function Globe({
   return (
     <div
       className={twMerge(
-        "mx-auto aspect-\[1\/1\] w-full max-w-\[600px\] ",
+        "absolute inset-0 mx-auto aspect-square w-full max-w-150",
+        className
       )}
     >
       <canvas
         className={twMerge(
-          "size-\[30rem\] opacity-0 transition-opacity duration-500 contain-[layout_paint_size]"
+          "size-full opacity-0 transition-opacity duration-500 contain-[layout_paint_size]"
         )}
         ref={canvasRef}
         onPointerDown={(e) => {
-          pointerInteracting.current = (e.clientX)
+          pointerInteracting.current = e.clientX
           updatePointerInteraction(e.clientX)
         }}
         onPointerUp={() => updatePointerInteraction(null)}
@@ -122,5 +121,5 @@ export function Globe({
         }
       />
     </div>
-  )
-}
+  );
+};
