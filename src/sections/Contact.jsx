@@ -63,7 +63,7 @@ const Contact = () => {
               required 
             />
           </div>
-          <button type="submit" className="w-full py-3 mt-2 bg-gradient-to-r from-royal to-fuchsia rounded-md font-semibold text-white hover:opacity-90 transition-opacity">
+          <button type="submit" className="w-full py-3 mt-2 bg-linear-to-r from-royal to-fuchsia rounded-md font-semibold text-white hover:opacity-90 transition-opacity">
             Send Message
           </button>
         </form>

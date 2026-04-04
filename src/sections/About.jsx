@@ -12,7 +12,7 @@ const About = () => {
                 <div className="flex items-end grid-default-color grid-1">
                     <img
                     src="assets/coding-pov.png"
-                    className="absolute scale-[1.75] -right-[5rem]-top-[1rem] 
+                    className="absolute scale-[1.75] -right-[5rem] -top-[1rem] 
                     md:scale-[3] md:left-50 md:inset-y-10
                     lg:scale-[2.5] overflow-hidden" />
                     <div className="z-10">
@@ -24,8 +24,8 @@ const About = () => {
                             and I am always looking for new opportunities to grow and improve my skills.
                         </p>
                     </div>
-                    <div className="absolute inset-x-0 pointer-events-none-bottom-4 
-                    h-1/2 sm:h-1/3 bg- gradient-to-t from-indigo" />
+                    <div className="absolute inset-x-0 pointer-events-none bottom-4 
+                    h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo-500/20 to-transparent" />
                 </div>
                 {/*Grid 2*/}
                 <div className="flex items-end grid-default-color grid-2">
@@ -73,7 +73,7 @@ const About = () => {
                     <div className="z-10 w-[50%] mb-5 ml-5">
                         <p className="headtext">Time Zone</p>
                         <p className="subtext">
-                            I am based in Mars, and open to work in any time zone.
+                            I am based in India, and open to work in any time zone.
                             </p>
                     </div>
                     <div className="absolute right-[-10%] top-[-20%] w-[120%] h-[120%] md:w-[150%] md:h-[150%] md:-right-[20%] z-0 pointer-events-auto">
@@ -81,7 +81,8 @@ const About = () => {
                     </div>
                 </div>
                 {/*Grid 4*/}
-                <div className="grid-default-color grid-4 relative flex flex-col items-center justify-center group">
+                <div className="grid-default-color grid-4 relative flex flex-col items-center justify-center group overflow-hidden">
+                    <img src="assets/grid.png" className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500" alt="grid-background" />
                     <div className="absolute inset-0 bg-gradient-to-br from-royal/30 to-black/50 z-0 pointer-events-none" />
                     <div className="z-10 flex flex-col items-center">
                         <p className="headtext text-center text-xl mb-4">Ready to start?</p>
