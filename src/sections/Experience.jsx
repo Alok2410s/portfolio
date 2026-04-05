@@ -4,16 +4,9 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Frontend Developer Intern",
-      company: "Tech Corp",
+      title: "Web Developer",
+      profession: "Student",
       duration: "June 2024 - Present",
-      description: "Working on modernizing the UI components using React and Tailwind CSS. Implementing dynamic animations for user engagement.",
-    },
-    {
-      id: 2,
-      title: "Freelance Web Developer",
-      company: "Self-Employed",
-      duration: "Jan 2023 - May 2024",
       description: "Designed and developed responsive websites for small businesses focusing on performance and SEO best practices.",
     },
   ];
