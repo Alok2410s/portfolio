@@ -76,7 +76,7 @@ const About = () => {
                             I am based in India, and open to work in any time zone.
                             </p>
                     </div>
-                    <div className="absolute right-[-10%] top-[-20%] w-[120%] h-[120%] md:w-[150%] md:h-[150%] md:-right-[20%] z-0 pointer-events-auto">
+                    <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-auto overflow-hidden scale-[1.5] sm:scale-100">
                        <Globe />
                     </div>
                 </div>
@@ -96,6 +96,7 @@ const About = () => {
                 </div>
                 {/*Grid 5*/}
                 <div className="grid-default-color grid-5 relative flex flex-col justify-end overflow-hidden group">
+                    <img src="assets/code-vision.png" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-500 z-0" alt="code" />
                     <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-fuchsia/20 via-transparent to-transparent opacity-60 pointer-events-none" />
                     <div className="z-10 relative md:max-w-[70%]">
                         <p className="headtext mb-2">My vision</p>

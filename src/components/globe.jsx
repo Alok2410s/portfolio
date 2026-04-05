@@ -4,9 +4,9 @@ export const Globe = () => {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <ReactGlobe
-        height={900}
-        width={600}
-        backgroundColor="rgba(0, 1, 1, 2)"
+        height={326}
+        width={326}
+        backgroundColor="rgba(0, 0, 0, 0)"
         backgroundImageOpacity={0.4}
         showAtmosphere
         showGraticules
